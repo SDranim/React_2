@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import image from "./imageInSrc.jpg";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div style={{border:"solid 1px black", maxWidth:"100vw"}}>
+      <h1 className='title red'>SunSet</h1>
+      <img src={image} alt='ss1' ></img>
+      <img src='/imageInPublic.jpg' alt='ss2' ></img>
     </div>
+
+<video src='' alt='vid'  type='video/mp4' style={{width:"320" , height:"240"}}></video>
+
+    </>
   );
 }
 
